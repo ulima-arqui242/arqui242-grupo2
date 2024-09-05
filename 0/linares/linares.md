@@ -30,4 +30,4 @@ Dentro de diez años me veo trabajando en el extranjero como desarrollador backe
 
 [Ver integrantes](../integrantes.md)
 
-[Regresar al índice](../../proyecto.md)
+[Regresar al índice](../../README.md)
