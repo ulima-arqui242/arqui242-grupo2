@@ -5,4 +5,4 @@
 - [Jose Linares](linares/linares.md)
 - [Jean Pierre Soto](soto/soto.md)
 
-[Regresar al índice](../proyecto.md)
+[Regresar al índice](../README.md)
