@@ -27,5 +27,5 @@ Formando parte de una gran empresa de desarrollo de software, teniendo proyectos
 
 [Ver integrantes](../integrantes.md)
 
-[Regresar al índice](../../proyecto.md)
+[Regresar al índice](../../README.md)
 
