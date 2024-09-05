@@ -20,4 +20,4 @@ Mi visión a 10 años es teniendo un puesto de Programador Senior o, en su defec
 
 [Ver integrantes](../integrantes.md)
 
-[Regresar al índice](../../proyecto.md)
+[Regresar al índice](../../README.md)
