@@ -1,5 +1,4 @@
 # JEAN PIERRE SOTO TIPACTI
-![Jean Pierre Soto Tipacti](soto.jpg)
 
 ## PRESENTACIÓN
 
