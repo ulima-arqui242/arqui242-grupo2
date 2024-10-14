@@ -28,6 +28,6 @@ Azure IoT es un conjunto de servicios y herramientas en la nube que ofrece Micro
 a gran escala. En otras palabras, permite que los dispositivos de IoT (como sensores o máquinas) se comuniquen con los servicios en la nube. A continuación,
 se muestra un diagrama de cómo funcionan las soluciones IoT.
 
-![Diagrama de arquitectura solución IoT](diagramaArquitecturaSolucionIOT.jpg)
+![Diagrama de arquitectura solución IoT](diagramaArquitecturaSolucionIOT.svg)
 
 En este diagrama, 
