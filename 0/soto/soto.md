@@ -17,7 +17,7 @@ En cuanto a mi expectativa del curso es poder terminar el curso con los conocimi
 ### MI VISIÓN A 10 AÑOS
 Mi visión a 10 años es teniendo un puesto de Programador Senior o, en su defecto, tener mi propia empresa de desarrollo de software que pueda brindar soluciones orientadas a facilitar la vida de los usuarios.
 
-[Ver Informe Individual](/trabajoIndividual/Informe_Individual.md)
+[Ver Informe Individual](0/soto/trabajoIndividual/Informe_Individual.md)
 
 [Ver integrantes](../integrantes.md)
 
