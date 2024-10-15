@@ -131,6 +131,80 @@ Un acción a realizar importante del Azure Stream Analytics es la creación de j
 ## DESVENTAJAS DE AZURE IOT
 Realmente Azure IoT es una herramienta muy beneficiosa y amigable; sin embargo, al igual que todos los servicios de Azure, el problema de Azure IoT es el modelo de pricing, existen servicios como el Azure IoT Device Provisioning Service que no se encuentra en la capa gratuita de Azure, lo que implica incurrir en costos adicionales, del mismo modo el servicio de Azure IoT Hub está limitado en su capa gratuita, puesto que diariamente se limita al sistema a 8000 mensajes diarios, lo que está bien para un entorno de pruebas o un sistema pequeño que no apunta a escalar, pero si se desea que el sistema sea escalable, entonces hay un problema grande, pues la capa gratuita no será suficiente y se deben de considerar costos adicionales. Otro problema de Azure IoT es que existen servicios como Azure IoT Explorer que no se encuentran fácilmente en el entorno de Azure, sino que tienes que estar investigando y encontrando el repositorio en gitHub.
 
+## CONSIDERACIONES TÉCNICAS
+
+### Pasos Iniciales
+Para poder utilizar Azure IoT primero se debe contar con una cuenta Microsoft. ya sea personal o institucional, puedes crearla entrando a este link: https://azure.microsoft.com/es-es/pricing/purchase-options/azure-account/
+Allí se debe seleccionar si la cuenta será de prueba gratuita o pagada.
+
+![Eleccion de Plan](EleccionPlan.jpg)
+
+Una vez iniciada la cuenta Microsoft, en cualquiera de las opciones que elijas debes de registrar una tarjeta de crédito o débito, esto con el fin de cobrarte automáticamente cuando sobrepases la capacidad del plan gratuito.
+
+
+![Registro de Tarjeta de Credito](RegistroTarjeta.jpg)
+
+Si cumples con los requisitos podrás acceder a azure en su capa gratuita, lo recomendable es que te registres como parte de una institución como la Universidad de Lima que cuenta con suscripción Azure for Students.
+
+Una vez dentro de la plataforma de Azure, debes crear un grupo de recursos, aquí podrás almacenar todos los recursos Azure necesarios para ejecutar tu solución IoT, este grupo de recursos se configura fácilmente como se muestra en la imagen solo es poner un nombre al grupo y establecer una región.
+
+![Creacion Grupo de Recursos](interfazCrearGrupoRecursos.png)
+
+Luego, hay que crear el Centro de IoT (IoT Hub) en el que vamos a poder administrar nuestros dispositivos y manejar la telemetría. Para ello, es necesario ya tener creado el grupo de recursos y seleccionarlo en el campo correspondiente, agregas un nombre al centro de IoT y luego seleccionas el nivel, entre estas opciones esta el nivel básico, estándar y gratis. Como se muestra en las imágenes depende del nivel y la cantidad de mensajes, el costo que se debe pagar. **Importante es mencionar que solo se puede crear una instancia de nivel gratuito, la que está limitada a 8000 mensajes diarios.**
+
+![CreacionCentroIoT1](crearIoTHub1.png)
+
+![CreacionCentroIoT2](crearIoTHub2.png)
+
+![CreacionCentroIoT3](crearIoTHub3.png)
+
+Luego configuras la conectividad, es decir quién puede acceder, si se puede acceder al centro de manera pública o es privada y configurar la versión de TLS Mínima a utilizar, esto afecta a la seguridad de la capa de transporte.
+
+![CreacionCentroIoT4](crearIoTHub4.png)
+
+Luego se configura cómo se administrará el centro de IoT, que puede ser RBAC (que es control de acceso basado en roles) o RBAC + Directiva de acceso compartido, puedes también asignarte en la creación el rol de colaborador de datos de IoT Hub, lo puedes hacer más adelante también.
+
+![CreacionCentroIoT5](crearIoTHub5.png)
+
+Puedes agregar otros servicios, pero ten en cuenta que los otros servicios no siempre son compatibles con el nivel escogido de tu centro de IoT, y algunos no son gratuitos y se cobran a parte.
+
+![CreacionCentroIoT6](crearIoTHub6.png)
+
+Dentro del centro de IoT es necesario revisar las estadísticas, porque ahí puedes visualizar los dispositivos que tienes, cuántos mensajes hay de dispositivo a la nube y cuántos mensajes diarios llevas, en caso desees llevar la cuenta para tus 8000 mensajes diarios de la capa gratuita. 
+
+![Estadisticas Centro IoT](estadisticasIoTHub.png)
+
+Luego dentro del centro IoT, puedes crear los dispositivos que necesites para tu solución, esto lo lograrás configurando un ID, configurando el tipo de autenticación o la clave que tendrá si la comunicación requerirá de algún certificado de autenticación y la habilitación o deshabilitación de la conexión del dispositivo al centro IoT.
+
+![Creacion Dispositivo](CreacionDispositivo.png)
+
+Para visualizar de mejor manera tus dispositivos y los mensajes que envías desde tus dispositivos a la nube, puedes usar el Azure IoT Explorer, lastimosamente, esta herramienta la debes buscar en el github de Azure, pero aquí dejo el link: https://github.com/Azure/azure-iot-explorer/releases/tag/v0.15.8.
+
+En el Azure IoT Explorer, solo debes ingresar la cadena de conexión principal de tu centro de IoT que la encuentras en la pestaña de Directivas de Acceso Compartido en tu centro IoT.
+
+![Obtencion de la Cadena de Conexion Principal del centro de IoT](ObtencionDeCadenaDeConexionPrincipal.png)
+
+![Conexion a Azure IoT Explorer](Conexion_a_AzureIoTExplorer.png)
+
+Para ver los mensajes entras a un dispositivo de tu centro de IoT e ingresas a la pestaña Telemetría
+
+![Telemetria](Telemetria.png)
+
+Finalmente, puedes agregar un job de Azure Stream Analytics con entradas en el centro de IoT y salidas en un Power BI, pero en líneas generales tendría la base de tu solución IoT. A continuación se presenta una demo para que se pueda visualizar de mejor manera cómo funciona en general Azurer IoT
+
+## DEMO
+
+Caso:
+Tomando como contexto el sistema de recomendación de juegos planteado para el trabajo, en el que los clientes puedan calificar y reseñar los juegos que deseen, así como visualizar en dashboards las estadísticas de cada juego y las reseñas que los mismos tienen, con posibilidad de filtrar las reseñas por cada usuario o juego; para ello se establece una solución de IoT que permita que mediante diversos dispositivos conectados a un solo Hub se pueden recepcionar las reseñas y calificaciones que los usuarios envíen a través de los dispositivos, estos datos se procesarán y se mostrarán en un Power BI Desktop.
+
+Para la demo, es necesario tener un centro IoT configurado y un job de Azure Stream Analytics, asimismo se incluyen códigos para poder ir enviando mensajes desde los dispositivos que simulan a los usuarios. Ejecute los códigos en Visual Studio Code o en algún IDE que soporte Python.
+
+Link a Video con Demo:
+
+Link a Power BI: https://app.powerbi.com/links/1AZxrEs6wC?ctid=e46d3862-8595-45d1-9b69-630798d8902d&pbi_source=linkShare
+
+Link a Códigos en Visual Studio Code: [Ver Codigos](../soto/trabajoIndividual/Codigos)
+
 ## FUENTES:
 https://learn.microsoft.com/es-es/azure/iot/howto-use-iot-explorer
 https://learn.microsoft.com/es-es/azure/iot/iot-overview-analyze-visualize
