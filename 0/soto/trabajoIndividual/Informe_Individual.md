@@ -196,7 +196,7 @@ Tomando como contexto el sistema de recomendación de juegos planteado para el t
 
 Para la demo, es necesario tener un centro IoT configurado y un job de Azure Stream Analytics, asimismo se incluyen códigos para poder ir enviando mensajes desde los dispositivos que simulan a los usuarios. Ejecute los códigos en Visual Studio Code o en algún IDE que soporte Python.
 
-Link a Video con Demo:
+Link a Video con Demo: https://www.youtube.com/watch?v=Pg3T5I5iOdA
 
 Link a Power BI: https://app.powerbi.com/links/1AZxrEs6wC?ctid=e46d3862-8595-45d1-9b69-630798d8902d&pbi_source=linkShare
 
