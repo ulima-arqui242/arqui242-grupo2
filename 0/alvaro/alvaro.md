@@ -25,6 +25,9 @@ Durante el curso de arquitectura de software, espero adquirir un conocimiento pr
 ### Proyección en 10 años
 Formando parte de una gran empresa de desarrollo de software, teniendo proyectos propios enfocados a la interacción Humano-Computadora y mi propia Startup de software. Al ser una persona la cual no es tan destacable en las relaciones interpersonales mi meta a largo plazo es lidiar con ello y poder liderar grupos de trabajos.
 
+
+### Trabajo Individual
+Link de Presentación:  https://slidesgo.com/editor/share/9d40631e-cb84-40e1-baf4-88b284c643c8?embed=0&expires=1729112017&signature=3d33ba108a9212aed48ecfe06e1a3b42cc710a0a0b38f97a40664572fae8a36f#rs=link
 [Ver integrantes](../integrantes.md)
 
 [Regresar al índice](../../README.md)
