@@ -7,7 +7,7 @@ asegurar el correcto funcionamiento de los equipos o garantizar una conectividad
 Los proveedores de soluciones IoT pueden ofrecer servicios de software, dispositivos de conectividad, componentes integrados para el diseño inalámbrico o herramientas 
 para la gestión remota de los sistemas.
 
-## ¿QUÉ OPCIONES DE SOLUCONES IOT HAY EN CLOUD?
+## ¿QUÉ OPCIONES DE SOLUCIONES IOT HAY EN CLOUD?
 
 1. Amazon Web Services (AWS IoT Core): AWS IoT Core permite conectar dispositivos a la nube de forma segura y gestionar sus datos en tiempo real. Ofrece integración con otros servicios de AWS, como análisis, inteligencia artificial y aprendizaje automático, lo que facilita el desarrollo de soluciones IoT avanzadas. También permite la gestión de dispositivos, procesamiento de datos y análisis.
 
