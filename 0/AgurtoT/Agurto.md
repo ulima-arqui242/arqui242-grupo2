@@ -11,6 +11,7 @@ Por ultimo, en 10 años; especializarme en el desarrollo de sw, formar una consu
 
 Trabajo individual
 Link: https://www.youtube.com/watch?v=7U5VmIAm2YI&list=PLA8cBgwM8wI1nFO9A1iJRjqiDd7pMBiTd&ab_channel=JohanAgurtoTorres
+
 [Ver integrantes](../integrantes.md)
 
 [Regresar al índice](../../README.md)
