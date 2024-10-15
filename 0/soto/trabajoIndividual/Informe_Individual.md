@@ -169,7 +169,7 @@ Puedes agregar otros servicios, pero ten en cuenta que los otros servicios no si
 
 Dentro del centro de IoT es necesario revisar las estadísticas, porque ahí puedes visualizar los dispositivos que tienes, cuántos mensajes hay de dispositivo a la nube y cuántos mensajes diarios llevas, en caso desees llevar la cuenta para tus 8000 mensajes diarios de la capa gratuita. 
 
-![Estadisticas Centro IoT](estadisticasIoTHub.png)
+![Estadisticas Centro IoT](EstadisticasIoTHub.png)
 
 Luego dentro del centro IoT, puedes crear los dispositivos que necesites para tu solución, esto lo lograrás configurando un ID, configurando el tipo de autenticación o la clave que tendrá si la comunicación requerirá de algún certificado de autenticación y la habilitación o deshabilitación de la conexión del dispositivo al centro IoT.
 
