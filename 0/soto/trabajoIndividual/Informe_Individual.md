@@ -141,9 +141,6 @@ Allí se debe seleccionar si la cuenta será de prueba gratuita o pagada.
 
 Una vez iniciada la cuenta Microsoft, en cualquiera de las opciones que elijas debes de registrar una tarjeta de crédito o débito, esto con el fin de cobrarte automáticamente cuando sobrepases la capacidad del plan gratuito.
 
-
-![Registro de Tarjeta de Credito](RegistroTarjeta.jpg)
-
 Si cumples con los requisitos podrás acceder a azure en su capa gratuita, lo recomendable es que te registres como parte de una institución como la Universidad de Lima que cuenta con suscripción Azure for Students.
 
 Una vez dentro de la plataforma de Azure, debes crear un grupo de recursos, aquí podrás almacenar todos los recursos Azure necesarios para ejecutar tu solución IoT, este grupo de recursos se configura fácilmente como se muestra en la imagen solo es poner un nombre al grupo y establecer una región.
