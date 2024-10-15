@@ -203,7 +203,7 @@ Link a Video con Demo:
 
 Link a Power BI: https://app.powerbi.com/links/1AZxrEs6wC?ctid=e46d3862-8595-45d1-9b69-630798d8902d&pbi_source=linkShare
 
-Link a Códigos en Visual Studio Code: [Ver Codigos](../soto/trabajoIndividual/Codigos)
+Link a Códigos en Visual Studio Code: [Ver Codigos](../trabajoIndividual/Codigos)
 
 ## FUENTES:
 https://learn.microsoft.com/es-es/azure/iot/howto-use-iot-explorer
