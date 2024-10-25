@@ -1,15 +1,8 @@
 
-# Trabajo: Implementación de Patrones Cloud
+# Jean Pierre Soto Tipacti - Retry Pattern
 
-## Instrucciones Generales
-
-1. **Elección de Tema**:
-   - Seleccione uno de los patrones de cloud del catálogo de Microsoft: [Microsoft Cloud Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/).
-   - Asegúrese de registrar su elección en el listado de grupos publicado en Blackboard para evitar duplicaciones de temas.
-
-2. **Desarrollo del Patrón**:
-   Para el patrón seleccionado, realice un análisis detallado que incluya los siguientes puntos:
-   
+1. **Desarrollo del Patrón**:
+  
    - **Problema**: Describa claramente cuál es el problema que el patrón busca resolver.
    - **Solución**: Explique la solución que propone el patrón. Complement información con otras plataformas, no nos quedemos con lo que presenta el catálogo.
    - **Casos de Aplicación**: Identifique y describa escenarios concretos y reales donde este patrón pueda aplicarse de forma efectiva. Considere casos de uso basados en la industria, aplicaciones empresariales, startups, etc.
