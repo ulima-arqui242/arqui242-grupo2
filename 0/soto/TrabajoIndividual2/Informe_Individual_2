@@ -1,0 +1,26 @@
+
+# Trabajo: Implementación de Patrones Cloud
+
+## Instrucciones Generales
+
+1. **Elección de Tema**:
+   - Seleccione uno de los patrones de cloud del catálogo de Microsoft: [Microsoft Cloud Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/).
+   - Asegúrese de registrar su elección en el listado de grupos publicado en Blackboard para evitar duplicaciones de temas.
+
+2. **Desarrollo del Patrón**:
+   Para el patrón seleccionado, realice un análisis detallado que incluya los siguientes puntos:
+   
+   - **Problema**: Describa claramente cuál es el problema que el patrón busca resolver.
+   - **Solución**: Explique la solución que propone el patrón. Complement información con otras plataformas, no nos quedemos con lo que presenta el catálogo.
+   - **Casos de Aplicación**: Identifique y describa escenarios concretos y reales donde este patrón pueda aplicarse de forma efectiva. Considere casos de uso basados en la industria, aplicaciones empresariales, startups, etc.
+   - **Aplicación en su Trabajo de Grupo**: Exponga cómo podría aplicarse el patrón en el proyecto grupal del curso, describiendo los beneficios y consideraciones que deben tenerse en cuenta.
+
+3. **Desarrollo de Código y Demo**:
+   - Implemente una solución que utilice el patrón seleccionado en un caso real o en un escenario de ejemplo bien definido.
+   - Documente el caso real y detalle el proceso de implementación, asegurándose de describir cada paso realizado.
+   - (Opcional) Prepare una demo en video donde muestre el funcionamiento de la implementación, explicando brevemente su funcionamiento.
+
+4. **Entrega**:
+   - Sobre su página personal en el repositorio de Github del grupo debe agregar una sección titulada "Patrones Cloud".
+   - Puede desarrollar el código en el mismo repo o en un repositorio externo.
+   - Si realiza el video, súbalo a una plataforma de su elección (YouTube, Vimeo, etc.) y comparta el enlace en la documentación.
