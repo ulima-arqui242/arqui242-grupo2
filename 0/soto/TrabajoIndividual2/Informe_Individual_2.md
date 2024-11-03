@@ -62,6 +62,7 @@ El patrón Retry ofrece tres estrategias de solución, las cuales pueden ser apl
 		-   **Límite de uso del patrón**: Retry es ideal para errores transitorios, no para problemas constantes. Si la base de datos está caída por un tiempo prolongado, el patrón no resolverá el problema y el sistema puede terminar inoperativo.
 
 **Diagrama de Patrón:**
+
 ![image](https://github.com/user-attachments/assets/fd690806-8068-4942-9313-137ceaadc019)
 
 2. **Desarrollo de Código y Demo**:
