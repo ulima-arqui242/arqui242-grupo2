@@ -19,6 +19,8 @@ Mi visión a 10 años es teniendo un puesto de Programador Senior o, en su defec
 
 [Ver Informe Individual](../soto/trabajoIndividual/Informe_Individual.md)
 
+[Patrones de Diseño](../soto/trabajoIndividual2/Informe_Individual_2.md)
+
 [Ver integrantes](../integrantes.md)
 
 [Regresar al índice](../../README.md)
