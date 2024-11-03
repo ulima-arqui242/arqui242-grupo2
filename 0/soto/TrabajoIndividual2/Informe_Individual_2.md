@@ -61,6 +61,9 @@ El patrón Retry ofrece tres estrategias de solución, las cuales pueden ser apl
 		-   **Registro de errores**: Es importante llevar un registro de cuándo y por qué fallaron las solicitudes, ya que múltiples intentos fallidos pueden indicar un problema mayor que debe ser abordado.
 		-   **Límite de uso del patrón**: Retry es ideal para errores transitorios, no para problemas constantes. Si la base de datos está caída por un tiempo prolongado, el patrón no resolverá el problema y el sistema puede terminar inoperativo.
 
+**Diagrama de Patrón:**
+![image](https://github.com/user-attachments/assets/fd690806-8068-4942-9313-137ceaadc019)
+
 2. **Desarrollo de Código y Demo**:
 
    El escenario para la Demo es el siguiente: En el contexto de nuestro proyecto de aplicación o plataforma de recomendación de juegos, específicamente en el módulo de estadística, reseñas y calificaciones, tomamos una comunicación, particularmente la consulta por parte de la aplicación a la base de datos que aloja la información sobre calificaciones y reseñas, entonces la aplicación debe ser capaz de manejar fallos temporales de conexión o sobrecarga en base de datos. En esta demo se simulará una comunicación y se implementará el patrón Retry, en búsqueda de simular fallos y establecer reintentos de comunicación. Para la demo se establecerá un tiempo fijo entre intento e intento; sin embargo, se podrían configurar tiempos variables, y un cantidad máxima de reintentos de tres. Asimismo, se establecerá data de prueba y se implementará una simulación de fallas, mediante un valor aleatorio que simule que hay una falla temporal, es decir, cada vez que se intenta se genera un valor booleano que determina si hubo falla o no para regresar mensaje en consola, a continuación se muestra el paso a paso en código.
