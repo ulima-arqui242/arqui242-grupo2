@@ -92,4 +92,6 @@ Pasos de la implementación:
 -   **Paso 1**: `get_game_statistics` intenta conectarse a la base de datos. Si se produce un fallo (simulado aleatoriamente), `ConnectionError` es capturado y el Retry lo vuelve a intentar.
 -   **Paso 2**: Si después de tres intentos el fallo persiste, se lanza un mensaje de error final.
 -   **Resultado Final**: Si se obtiene una respuesta exitosa, se muestran el promedio de calificaciones y el total de reseñas. Si no se logra obtener los datos, se informa al usuario.
-   
+
+
+   https://youtu.be/CCCPAA-gatM
