@@ -28,6 +28,10 @@ Formando parte de una gran empresa de desarrollo de software, teniendo proyectos
 
 ### Trabajo Individual
 Link de Presentación:  https://slidesgo.com/editor/share/9d40631e-cb84-40e1-baf4-88b284c643c8?embed=0&expires=1729112017&signature=3d33ba108a9212aed48ecfe06e1a3b42cc710a0a0b38f97a40664572fae8a36f#rs=link
+
+### Trabajo Individual 2
+https://slidesgo.com/editor/share/9d89e982-509d-4e5d-80fe-bfb6f394e2c6?embed=0&expires=1732313355&signature=947d55a32ba399716f8acef6065a8ec2d3756b0f1c0fdb0034725ffe568ef766
+
 [Ver integrantes](../integrantes.md)
 
 [Regresar al índice](../../README.md)
