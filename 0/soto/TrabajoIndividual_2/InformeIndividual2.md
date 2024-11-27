@@ -133,7 +133,7 @@ Este diagrama describe cómo StarRocks maneja una operación de agregación dist
 ## Referencias
 
 - [StarRocks - Official Site](https://www.starrocks.io/)
-- [Arquitectura de StarRocks](https://www.starrocks.io/docs/)
+- [Arquitectura de StarRocks](https://docs.starrocks.io/docs/introduction/StarRocks_intro/)
 
 ## Conclusión
 
