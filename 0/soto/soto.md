@@ -21,6 +21,8 @@ Mi visión a 10 años es teniendo un puesto de Programador Senior o, en su defec
 
 [Patrones Cloud](../soto/TrabajoIndividual2/Informe_Individual_2.md)
 
+[Ver Informe Individual 2](../soto/TrabajoIndividual_2/InformeIndividual2.md)
+
 [Ver integrantes](../integrantes.md)
 
 [Regresar al índice](../../README.md)
