@@ -283,7 +283,7 @@ Y finalmente puedes crear un nuevo dashboard como este:
 ![image](https://github.com/user-attachments/assets/ca0fb9c9-5084-4e43-9e40-9633516f4bee)
 
 
-### ENLACE A VIDEO DE DEMO: 
+### ENLACE A VIDEO DE DEMO: https://youtu.be/iOVcwePA2dc
 
 
 
