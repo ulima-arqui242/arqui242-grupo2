@@ -100,7 +100,7 @@ StarRocks se utiliza principalmente para realizar análisis de grandes volúmene
 
 # Explicación del Diagrama de Procesamiento de Consultas en StarRocks
 
-El diagrama que compartiste describe cómo StarRocks maneja una operación de agregación distribuida (como `COUNT(*)` con un `GROUP BY`) en un entorno de base de datos distribuida. StarRocks utiliza un enfoque de procesamiento en paralelo masivo (MPP) para manejar consultas distribuidas, asegurando alta eficiencia incluso con grandes volúmenes de datos.
+Este diagrama describe cómo StarRocks maneja una operación de agregación distribuida (como `COUNT(*)` con un `GROUP BY`) en un entorno de base de datos distribuida. StarRocks utiliza un enfoque de procesamiento en paralelo masivo (MPP) para manejar consultas distribuidas, asegurando alta eficiencia incluso con grandes volúmenes de datos.
 
 ## Componentes Clave del Diagrama
 
