@@ -147,21 +147,26 @@ Para el uso de StarRocks hay dos formas eventualmente más utilizadas:
 ## OPCIÓN 1: INSTALAR DE MANERA LOCAL
 
 Antes de Instalar StarRocks se debe tener en cuenta, los siguientes requisitos:
-Sistema operativo: Linux (Ubuntu, CentOS, Debian, etc.)
-Dependencias:
-Docker (para instalación en contenedores).
-Java 8 o superior (si no utilizas Docker).
-curl, wget y otras herramientas comunes de red.
+
+- Sistema operativo: Linux (Ubuntu, CentOS, Debian, etc.)
+- Dependencias:
+- Docker (para instalación en contenedores).
+- Java 8 o superior (si no utilizas Docker).
+- curl, wget y otras herramientas comunes de red.
 
 Se debe ingresar al siguiente enlace: https://www.starrocks.io/download/community
+
 Y dentro se debe seleccionar para que sistema operativo hay que tomar en cuenta que StarRocks trabaja en entornos Linux y trabaja con un servidor SQL:
+
 ![image](https://github.com/user-attachments/assets/445f6369-b852-4c4f-b434-d3d10ba53c74)
 
 Luego se selecciona la versión:
+
 ![image](https://github.com/user-attachments/assets/f6d3cd97-482b-4daf-a0aa-a503ddb5cdf6)
 
 Esto traerá un archivo .zip que deberás descomprimir y acceder en caso estés usando Windows al WLS o el Subsistema Linux para Windows
 El archivo contiene esto:
+
 ![image](https://github.com/user-attachments/assets/1fc8589c-8979-4aaf-a621-a7c9764d2b39)
 
 Si no se cuenta con eel wsl, usa el siguiente comando en tu cmd o Powershell: wsl --install
@@ -178,14 +183,17 @@ Una vez instalado wsl, se puede proseguir
 Existen dos carpetas una llamada **be** y la otra llamada **fe**, porque StarRocks necesita de dos servidores tanto de frontend como de backend, por lo mismo es un poco complicado de ejecutar de manera local.
 
 Dentro de **be** se encuentra lo siguiente:
+
 ![image](https://github.com/user-attachments/assets/d58d10db-8f45-4ab1-8475-6f0d48a8efd1)
 
 y dentro de **fe** lo siguiente:
+
 ![image](https://github.com/user-attachments/assets/dcf1ea2c-ac63-42ab-a1b4-3b3f40d03ffc)
 
 Los archivos que se deben ejecutar son **start_be.sh** y **start_fe.sh** todo desde el wsl de Windows.
 
 Una vez ejecutados se podrá abrir una página como la de la imagen en el puerto localhost:8030
+
 ![image](https://github.com/user-attachments/assets/00a7e66a-7385-4d8c-9042-207746f67737)
 
 Y el backend debería estar corriendo en el purto 9030.
@@ -194,24 +202,24 @@ Y el backend debería estar corriendo en el purto 9030.
 
 Instala Docker si aún no lo tienes. Puedes hacerlo ejecutando el siguiente comando en una terminal de Ubuntu:
 
-sudo apt-get update
-sudo apt-get install docker.io
+`sudo apt-get update`
+`sudo apt-get install docker.io`
 
 Descarga la imagen oficial de StarRocks desde Docker Hub:
 
 Existen muchas imágenes de StarRocks en Docker, pero lo recomendable si va a ser algo simple es usar el all in one:
 
-docker pull starrocks/allin1-ubuntu:latest
+`docker pull starrocks/allin1-ubuntu:latest`
 
 Crea y ejecuta un contenedor para StarRocks usando Docker:
 
-docker run -d --name starrocks-all-in-one -p 9030:9030 -p 8030:8030 starrocks/allin1-ubuntu:latest
+`docker run -d --name starrocks-all-in-one -p 9030:9030 -p 8030:8030 starrocks/allin1-ubuntu:latest`
 
 Este comando ejecutará el contenedor de StarRocks en segundo plano. La opción -p mapea los puertos 9030 y 8030
 
 Ahora, puedes acceder al servidor de StarRocks utilizando el puerto 9030, por ejemplo, con el cliente de MySQL:
 
-mysql -h 127.0.0.1 -P 9030 -u root -p
+`mysql -h 127.0.0.1 -P 9030 -u root -p`
 
 Una vez dentro del terminal se pueden utilizar comandos similares a SQL, ya que StarRocks cuenta con su propio cliente de MySQL
 
@@ -223,7 +231,7 @@ Se tiene un caso de ejemplo, el cual es el siguiente, se tiene que crear una bas
 
 Para esto dentro del contenedor de StarRocks se coloca lo siguiente:
 
-mysql -h 127.0.0.1 -P 9030 -u root -p
+`mysql -h 127.0.0.1 -P 9030 -u root -p`
 
 y se procede a crear la base de datos para la demo en este caso la llamaré realtime_demo
 
@@ -250,6 +258,7 @@ ese código te mostrará algo como esto:
 Ahora se puede conectar con Grafana:
 
 Para esto usaremos docker ejecutando el siguiente comando:
+
 ![image](https://github.com/user-attachments/assets/069f091f-8385-456d-aab4-1f2bfc8e97c5)
 
 Esto iniciará grafana en: http://localhost:3000
@@ -257,17 +266,22 @@ Esto iniciará grafana en: http://localhost:3000
 Dentro de Grafana cuando inicies sesión que tiene como valores por defecto
 
 USUARIO: admin
+
 PASSWORD: admin
 
 y hayas creado tu propia contraseña, puedes seguir con la creación de la fuente de datos.
 
 Para ello vas a la sección Connections/Data sources:
+
 ![image](https://github.com/user-attachments/assets/855f5edd-740c-4798-8b05-af3660575f08)
 
 Ingresas a ADD NEW DATA SOURCE Y BUSCAS MYSQL, si todo está bien ingresas lo siguiente:
+
 ![image](https://github.com/user-attachments/assets/dfc9e0f1-f391-47e3-9b11-8dc703d60558)
 
-Y LISTO SOLO VAS A LA SECCIÓN DASHBOARDS Y CREAS UN NUEVO DASHBOARD Y YA ESTÁ.
+Y finalmente puedes crear un nuevo dashboard como este:
+![image](https://github.com/user-attachments/assets/ca0fb9c9-5084-4e43-9e40-9633516f4bee)
+
 
 ### ENLACE A VIDEO DE DEMO: 
 
